@@ -13,10 +13,10 @@ secret_key_base =
 
 config :mazes, MazesWeb.Endpoint,
   http: [
-    port: 5000,
+    port: 8000,
     transport_options: [socket_opts: [:inet6]]
   ],
-  url: [host: "mazes.angelika.me", port: 5000],
+  url: [host: "mazes.angelika.me", port: 8000],
   secret_key_base: secret_key_base
 
 config :mazes, MazesWeb.Endpoint, server: true

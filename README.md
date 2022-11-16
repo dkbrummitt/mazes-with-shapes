@@ -6,12 +6,26 @@ A maze generator. Deployed at [mazes.angelika.me](https://mazes.angelika.me/).
 
 To start your Phoenix server:
 
-  * Install Elixir, Erlang, and NodeJS with `asdf install`
+  * Install Elixir, Erlang, and NodeJS with `asdf install` or `brew install erlang elixir node` (It doesnt have to be asdf)
   * Install dependencies with `mix deps.get`
   * Install Node.js dependencies with `npm install` inside the `assets` directory
+  * Install Brunch an npm build, `npm install brunch --save-dev`
+  * Execute `node_modules/brunch/bin/brunch build`
   * Start Phoenix endpoint with `mix phx.server`
 
-Now you can visit [`localhost:5000`](http://localhost:5000) from your browser.
+```sh
+mix deps.get
+cd assets
+npm i
+npm install brunch --save-dev
+node_modules/brunch/bin/brunch build
+cd ..
+mix phx.server
+```
+
+Notes: Custom shapes must be 64x64px, PNGs and only black and white. Puzzle will match the black.
+
+Now you can visit [`localhost:8000`](http://localhost:8000) from your browser.
 
 ## Tests
 

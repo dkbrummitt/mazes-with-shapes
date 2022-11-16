@@ -35,6 +35,7 @@
     <%= if show_solution?(@settings, @solution) do %>
     <%= solution(@maze, @solution, &vertex_center/2) %>
     <% end %>
+    <%= solution(@maze, @solution, &vertex_center/2) %>
 
     <%= if @maze.from && @maze.to do %>
     <%= from_to(@maze, &vertex_center/2) %>
